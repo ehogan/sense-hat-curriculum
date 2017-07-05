@@ -9,17 +9,17 @@ new: true
 # Introduction { .intro}
 
 In this project you will compare the data from the temperature and humidity
-sensors on the Sense HAT with site-specific temperature and humidity data from
-Met Office DataPoint (http://www.metoffice.gov.uk/datapoint). Then you will
-display colours corresponding to the conditions on the Sense HAT LED matrix.
+sensors on the Sense HAT with temperature and humidity data from Met Office
+DataPoint (http://www.metoffice.gov.uk/datapoint). Then you will display
+colours corresponding to the conditions on the Sense HAT LED matrix.
 
 You will be writing code in the Python programming language, which you may have
 learnt in the Python module (https://codeclubprojects.org/en-GB/python).
 
 # Step 1: Displaying colours { .activity}
 
-First let's show colours using the LED Matrix on the Sense HAT. The colours
-we are interested in are red and blue.
+First let's show colours using the LED Matrix on the Sense HAT. The colours we
+are interested in are red and blue.
 
 To set the colour of an individual LED we need to say how much red, green and
 blue it should have from 0 to 255.
@@ -28,7 +28,7 @@ blue it should have from 0 to 255.
 
 + Open a new Python 3 IDLE session.
 + Select `File` > `New File` to open a new file and save it as
-  `temperature.py`. 
+  `temperature.py`.
 + Add the code below to set up the Sense HAT. If you are using the Sense HAT
   emulator, replace `sense_hat` in the code below with `sense_emu`.
 
@@ -40,7 +40,7 @@ sense.clear()
 ```
 
 + Add the code below to set up a variable for the colour red and then turn all
-  the pixels red using `sense.clear(R)`. 
+  the pixels red using `sense.clear(R)`.
 
 ```python
 R = [255, 0, 0]
@@ -63,7 +63,7 @@ sense.clear(B)
 ```
 
 + Test your script again by pressing `F5`. The Sense HAT LED Matrix should turn
-  blue. 
+  blue.
 
 # Step 2: Reading the sensor data { .activity}
 
@@ -86,9 +86,9 @@ print(sense.temperature)
 
 # Step 3: Reading the latest forecast from Met Office DataPoint { .activity}
 
-Met Office DataPoint provides site-specific weather forecasts. First we need to
-set up Met Office DataPoint. To use Met Office DataPoint you will need an API
-key. You can find this in `/home/pi/api_key.txt`.
+Met Office DataPoint provides weather forecasts. First we need to set up Met
+Office DataPoint. To use Met Office DataPoint you will need an API key. You can
+find this in `/home/pi/api_key.txt`.
 
 ## Activity Checklist { .check}
 
